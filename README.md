@@ -1,6 +1,6 @@
 # Asana Django Backend
 
-Django REST Framework backend that matches FastAPI behavior exactly.
+Django REST Framework backend that matches asana behavior exactly.
 
 ## Code Structure
 
@@ -85,7 +85,7 @@ python manage.py runserver
 
 ### API Response Comparison
 
-To compare API responses between Django and FastAPI implementations:
+To compare API responses between Django and asana implementations:
 
 Build the Docker image:
 
@@ -100,33 +100,23 @@ docker run -it compare-api-responses
 ```
 
 This will:
-- Compare responses from Django and FastAPI backends
+- Compare responses from Django and Asana backends
 - Generate a detailed comparison report
 - Highlight any differences in response format, status codes, or data structure
 
 ## API Behavior
 
-This Django backend is designed to match the FastAPI backend behavior exactly:
+This Django backend is designed to match the asana backend behavior exactly:
 
-- **Request/Response Format**: Matches FastAPI Pydantic models
+- **Request/Response Format**: Matches asana models
 - **Error Format**: `{"errors": [{"message": "...", "help": "...", "phrase": "..."}]}`
 - **Pagination**: Asana-style offset tokens with `next_page` object
 - **Authentication**: Bearer token (Personal Access Token or OAuth2)
-- **Status Codes**: Matches FastAPI exactly
-
-## Endpoints
-
-- `/workspaces` - Workspace management (implemented)
-- `/users` - User management (TODO)
-- `/projects` - Project management (TODO)
-- `/tasks` - Task management (TODO)
-- `/sections` - Section management (TODO)
-- `/stories` - Story management (TODO)
-- `/attachments` - Attachment management (TODO)
+- **Status Codes**: Matches asana exactly
 
 ## Development
 
-The FastAPI codebase in `../asana_backend/` is the reference implementation. All Django endpoints must match FastAPI behavior exactly.
+All Django endpoints must match asana behavior exactly.
 
 ## Notes
 
