@@ -124,3 +124,7 @@ All Django endpoints must match asana behavior exactly.
 - Pagination uses offset tokens, not page numbers
 - Error responses follow Asana format exactly
 - OAuth2 scope checking is implemented but needs token validation
+
+## Cursor Transcripts
+
+- The scripts are present in the Cursor transcripts.
