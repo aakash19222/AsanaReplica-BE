@@ -1,0 +1,52 @@
+"""
+URL configuration for asana_django project.
+"""
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    # All API routes
+    path('', include('api.access_requests.urls')),
+    path('', include('api.allocations.urls')),
+    path('', include('api.attachments.urls')),
+    path('', include('api.audit_log.urls')),
+    path('', include('api.batch.urls')),
+    path('', include('api.budgets.urls')),
+    path('', include('api.custom_field_settings.urls')),
+    path('', include('api.custom_fields.urls')),
+    path('', include('api.custom_types.urls')),
+    path('', include('api.events.urls')),
+    path('', include('api.exports.urls')),
+    path('', include('api.goal_relationships.urls')),
+    path('', include('api.goals.urls')),
+    path('', include('api.jobs.urls')),
+    path('', include('api.memberships.urls')),
+    path('', include('api.organization_exports.urls')),
+    path('', include('api.portfolio_memberships.urls')),
+    path('', include('api.portfolios.urls')),
+    path('', include('api.project_briefs.urls')),
+    path('', include('api.project_memberships.urls')),
+    path('', include('api.project_statuses.urls')),
+    path('', include('api.project_templates.urls')),
+    path('', include('api.projects.urls')),
+    path('', include('api.rates.urls')),
+    path('', include('api.reactions.urls')),
+    path('', include('api.rules.urls')),
+    path('', include('api.sections.urls')),
+    path('', include('api.status_updates.urls')),
+    path('', include('api.stories.urls')),
+    path('', include('api.tags.urls')),
+    path('', include('api.task_templates.urls')),
+    path('', include('api.tasks.urls')),
+    path('', include('api.team_memberships.urls')),
+    path('', include('api.teams.urls')),
+    path('', include('api.time_periods.urls')),
+    path('', include('api.time_tracking_entries.urls')),
+    path('', include('api.typeahead.urls')),
+    path('', include('api.user_task_lists.urls')),
+    path('', include('api.users.urls')),
+    path('', include('api.webhooks.urls')),
+    path('', include('api.workspace_memberships.urls')),
+    path('', include('api.workspaces.urls')),
+]
