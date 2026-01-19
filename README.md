@@ -130,6 +130,6 @@ All Django endpoints must match asana behavior exactly.
 - The scripts are present in the Cursor transcripts.
 
 ## Code Generation from python script
-- create venv and install requirements.txt (pip install generate_code_from_yaml/requirements.txt)
-- generate fastapi code using generate_fastapi.py
-- generate django code using migrate_with_cursor_automated.py
+- Create venv and install requirements.txt (pip install generate_code_from_yaml/requirements.txt)
+- Generate fastapi code using generate_fastapi.py
+- Generate django code using migrate_with_cursor_automated.py
